@@ -1,0 +1,607 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body,html{
+    height: 100%;
+}
+/*Classes Gerais*/
+.center{
+    width: 1280px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 2%;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+/****/
+
+/*Estilização do Header*/
+header{
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    padding: 40px 40px;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+}
+.fas{
+    display: none !important;
+}
+header img{
+    width: 20%;
+    height: auto;
+    padding: 20px 0;
+}
+
+header ul{
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #b4b4b4;
+}
+
+header a:hover{
+    color: #8b8b8b;
+}
+
+/****/
+
+/*Estilização do mosaico*/
+
+.mosaico{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 0 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 80px;
+}
+
+.img-mosaico{
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-mosaico:nth-of-type(1){
+    background-image: url(../imagens/imagem01.jpg);
+}
+.img-mosaico:nth-of-type(2){
+    background-image: url(../imagens/imagem02.jpg);
+}
+.img-mosaico:nth-of-type(3){
+    background-image: url(../imagens/imagem03.jpg);
+}
+.img-mosaico:nth-of-type(4){
+    background-image: url(../imagens/imagem04.jpg);
+}
+.img-mosaico:nth-of-type(5){
+    background-image: url(../imagens/imagem05.jpg);
+}
+.img-mosaico:nth-of-type(6){
+    background-image: url(../imagens/imagem06.jpg);
+    background-position: center;
+}
+.img-mosaico:nth-of-type(7){
+    background-image: url(../imagens/imagem07.jpg);
+}
+.img-mosaico:nth-of-type(8){
+    background-image: url(../imagens/imagem08.jpg);
+}
+.img-mosaico:nth-of-type(9){
+    background-image: url(../imagens/imagem09.jpg);
+}
+.img-mosaico:nth-of-type(10){
+    background-image: url(../imagens/imagem10.jpg);
+}
+.img-mosaico:nth-of-type(11){
+    background-image: url(../imagens/imagem11.jpg);
+}
+.img-mosaico:nth-of-type(12){
+    background-image: url(../imagens/imagem12.jpg);
+}
+/***/
+
+/*Estilização seção de serviços*/
+.servicos{
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.servico-box{
+    width: calc(70%/3);
+    text-align: center;
+    background-color: #576975;
+    color: white;
+    padding: 20px;
+    margin: 0 10px;
+    padding-bottom: 10px;
+    
+}
+
+.servico-box img{
+    width: 20px;
+    align-self: center;
+
+}
+
+.servico-box p{
+    margin: 20px 0;
+}
+
+.servico-box:hover{
+    background-color: #688293;
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+/*Estilização da seção de perfil*/
+.perfil{
+    width: 100%;
+    padding: 100px
+}
+
+.imagem{
+    text-align: center;
+    width: 40%;
+}
+.perfil img{
+   width: 100%;
+   max-width: 400px;
+}
+
+.texto{
+    width: 50%;
+    margin-left: 30px;
+    color: rgb(83, 83, 83);
+}
+
+.mobile-text{
+    display: none;
+}
+
+.texto ul{
+    list-style-position: inside;
+    list-style: none;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.texto p{
+    margin-bottom: 20px;
+}
+.texto ul li::before{
+    content: " - ";
+}
+
+.texto h2{
+    margin-bottom: 40px;
+}
+/***/
+
+/*Estilização da seção de video*/
+.video{
+    width: 100%;
+    padding: 40px 2%;
+    text-align: center;
+}
+
+.video iframe{
+    width: 80%;
+    max-width: 500px;
+    height: 280px;
+    border: 0;
+}
+/***/
+
+/*Estilização da seção de tratamentos*/
+.tratamentos{
+    width: 100%;
+    padding: 40px 2%;
+}
+
+.titulo{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.titulo h2{
+    text-transform: uppercase;
+    color: rgb(83, 83, 83);
+}
+
+.tratamentos-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.sigle{
+    color: rgb(83, 83, 83);
+}
+
+span{
+    display: block !important;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/****/
+
+/*Estilização da seção de depoimentos*/
+.depoimentos{
+    padding-top: 180px;
+    width: 100%;
+}
+.depoimento-container{
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.author{
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img{
+    width: 40px;
+    height: 40px;
+    background-image: url(../imagens/perfil4.jpg);
+    background-size: contain;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dots{
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #b4b4b4;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active{
+    background-color: black;
+}
+/****/
+/*Estilização da seção de Redes Sociais*/
+.rsociais{
+    width: 100%
+}
+
+.rsocial-single{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-rsocial{
+    color: white;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.box-rsocial i{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.box-rsocial span{
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+.instagram{
+    background-color: #98a5ae;
+}
+
+.facebook{
+    background-color: #576975;
+}
+.galeria-instagram{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    column-gap: 5px;
+}
+
+.img-instagram{
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-instagram:nth-of-type(1){
+    background-image: url("../imagens/instagram01.jpg");
+}
+.img-instagram:nth-of-type(2){
+    background-image: url("../imagens/instagram02.jpg");
+}
+.img-instagram:nth-of-type(3){
+    background-image: url("../imagens/instagram03.jpg");
+}
+.img-instagram:nth-of-type(4){
+    background-image: url("../imagens/instagram04.jpg");
+}
+.img-instagram:nth-of-type(5){
+    background-image: url("../imagens/instagram05.jpg");
+}
+.img-instagram:nth-of-type(6){
+    background-image: url("../imagens/instagram06.jpg");
+}
+.img-instagram:nth-of-type(7){
+    background-image: url("../imagens/instagram07.jpg");
+}
+.img-instagram:nth-of-type(8){
+    background-image: url("../imagens/instagram08.jpg");
+}
+.img-instagram:nth-of-type(9){
+    background-image: url("../imagens/instagram09.png");
+}
+/****/
+/*Estilização da seção de contato*/
+.contato{
+    padding: 80px 2%;
+}
+.form-container{
+    width: 100%;
+    justify-content: center;
+}
+.form-container form{
+    width: 80%;
+    max-width: 500px;
+    justify-content: flex-start;
+    color:rgb(83, 83, 83);
+}
+form label{
+    margin-bottom: 10px;
+}
+
+form input{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid rgb(83, 83, 83);
+    margin-bottom: 20px;
+    outline: none;
+}
+
+form textarea{
+    height: 100px;
+    padding: 10px;
+    resize: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+    outline: none;
+}
+
+form input[type="submit"]{
+    background-color: #576975;
+    color: white;
+    text-transform: uppercase;
+    width: 100px;
+    font-size: 18px;
+    position: relative;
+    margin-left: -50px;
+    left: 50%;
+    cursor: pointer;
+}
+/****/
+
+/*Estilização da seção de informações*/
+.contatos02{
+    width: 100%;
+    justify-content: space-around;
+    background-color: #688293;
+    padding: 80px 10%;
+}
+
+.contato-box{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contato-box span{
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.span-titulo{
+    display: inline-block;
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+}
+/****/
+/*Estilização do footer*/
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    background-color: #576975;
+}
+/****/
+/*Design Responsivo*/
+@media screen and (max-width: 900px){
+    header nav{
+        display: none !important;
+    }
+
+    header img{
+        width: 25%;
+    }
+
+    .fas{
+        display: block !important;
+        font-size: 2em;
+        color: #b4b4b4;
+        cursor: pointer;
+    }
+
+    .servico-box{
+       width: calc(80%/3);
+       font-size: 14px; 
+    }
+
+    .servico-box{
+        width: 80%;
+    }
+    
+    .servico-box:nth-of-type(2){
+        background-color: #688293;
+        transform: scale(1.2);
+    }
+
+    .perfil{
+        padding: 80px 2%;
+        padding-bottom: 0;
+    }
+
+    .perfil img{
+        height: auto;
+    }
+
+    .texto ul{
+        line-height: 40px;
+    }
+
+    .extend{
+        display: none;
+    }
+
+    .mobile-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        color: rgb(83, 83, 83);
+        padding: 0 2%;
+    }
+
+    .mobile-text p{
+        margin-bottom: 20px;
+    }
+    
+    .galeria-instagram{
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+    .img-instagram{
+        display: none;
+    }
+
+    .mobile01{
+        display: block;
+    }
+
+    .contatos02{
+        padding: 80px 5%;
+    }
+}
+
+@media screen and (max-width: 700px){
+   header img{
+       width: 50%;
+   }
+    .mosaico{
+        grid-template-columns: auto auto auto;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .servicos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .servico-box:hover{
+        transform: none;
+    }
+    .servico-box:nth-of-type(2){
+        transform: scale(1.1);
+    }
+
+    .perfil{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem{
+        width: 100%;
+    }
+
+    .texto{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .tratamentos-container{
+        grid-template-columns: auto;
+    }
+
+    .sigle{
+        padding: 0 3%;
+    }
+
+    span{
+        text-align: center;
+    }
+
+    .galeria-instagram{
+        grid-template-columns: auto auto auto;
+    }
+
+    .mobile01{
+        display: none
+    }
+
+    .mobile02{
+        display: block;
+    }
+
+    .contatos02{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+
+    .contato-box{
+        padding: 20px 0;
+    }
+}
